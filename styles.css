@@ -1,11 +1,9 @@
 /* Grid Container */
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;              /* allows wrapping */
-    justify-content: center;      /* horizontal centering */
-    align-items: center;          /* vertical alignment */
-    gap: 20px;                    /* spacing between cards */
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+    grid-gap: 10px 10px;
 }
 
 /* Grid Items */
@@ -16,7 +14,7 @@
     border-radius: 5px;
     font-size: 40px;
 
-    display: flex;                /* center content inside card */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
